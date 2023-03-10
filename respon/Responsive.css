@@ -1,0 +1,153 @@
+    /* responsive */
+@media screen and (min-width:375px) {
+    .title{
+        font-size: 35px;
+    
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .logo {
+
+    }
+
+    .bag-bt, .user-bt {
+        display: inline;
+    }
+   
+    .input{
+        right: 145px;
+    }
+
+    .close{
+        right: 150px;
+    }
+
+
+    .st-login-bt{
+        width: 49%;
+    }
+
+    .st-sign-up-bt{
+        width: 49%;
+    }
+
+    .video1{
+        width: 95%;
+    }
+
+    .title{
+        text-align: center;
+    }
+
+    .title-1{
+        text-align: center;
+    }
+
+    .button-shop{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .jordan-card{
+        height: 270px;
+    }
+
+    .jordan-card:hover{
+        height: 380px;
+    }
+
+    .img-card{
+        width: 180px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+
+    .title-2,.ct2-title,.ct4-title,.ct5-title,.ct6-title,.ct6-p1,.ct7-title{
+        text-align: center;
+    }
+
+    .ct2-p1, .ct2-p3 , .ct2-p5, .ct2-p7{
+        font-size: 30px;
+    }
+
+    .ct2-p2, .ct2-p4 , .ct2-p6, .ct2-p8{
+        font-size: 20px;
+    }
+
+
+    .ct3-p1,.ct3-p3{
+        font-size: 30px;
+    }
+
+    .ct3-p2,.ct3-p4{
+        font-size: 20px;
+    }
+
+    .ct3-bt{
+        margin-top: 80px;
+    }
+
+    .ct6-imoji-1,.ct6-imoji-2{
+        font-size: 60px;
+    }
+
+
+    .ct6-card ul i{
+        font-size: 30px;
+    }
+
+    .fb{
+        font-size: 24px;
+    }
+
+    .lg-content,.rs-card{
+        width: 60%;
+    }
+
+
+}
+
+@media screen and (min-width: 820px ) and (max-width: 1023px){
+    .logo{
+        width: 7vh;
+        padding-bottom: 5px;
+        margin: 5px 0 0 5px;
+    }
+
+    .st-menu{
+        width: 50%;
+    }
+
+    .st-login-bt{
+        width: 49%;
+    }
+
+    .st-sign-up-bt{
+        width: 49%;
+    }
+
+    .title{
+        text-align: center;
+    }
+
+    .title-1{
+        text-align: center;
+    }
+
+    .button-shop{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .lg-content,.rs-card,.bag-card-ct{
+        width: 60%;
+    }
+
+    .st-ul2 li{
+        font-size: 18px;
+    }
+
+}

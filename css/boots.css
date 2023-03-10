@@ -1,0 +1,1589 @@
+    *{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    /* font-family: 'Dosis', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;     */
+}
+
+body{
+    background-image: linear-gradient(to right,rgb(74 74 79),rgb(171 171 177));
+}
+
+.all{
+    width: 98%;
+    height: auto;
+    background-color: #ffffff;
+    margin: 5px;
+    border-radius: 5px;
+    transition: all 0.9s ease;
+}
+
+/* // trang tri logo // */  
+.top-logo{
+    /* border-bottom: 3px rgb(74 74 79) sol   id; */
+}
+
+.logo{
+    width: 11vh;
+    position: absolute;
+    transition: 0.9s;
+    animation-name: down;
+    animation-duration: 2s;
+    /* margin: 5px 0 0 5px; */
+}
+
+
+/* thanh menu */
+.header{
+    border-left: 4px solid rgb(74 74 79);
+    border-right: 3px solid rgb(171 171 177);
+    height: 60px;
+    left: 0;
+    border-bottom: 3px solid rgb(74 74 79);
+    background-color: #ffffff;
+    /* border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px; */
+    transition: all 0.9s ease;
+    position: fixed;
+    width: 100%;
+    padding: 3px;
+    z-index: 1;
+    top: 0;
+    box-shadow: 0 0 25px rgb(74, 74, 79);
+    animation-name: down;
+    animation-duration: 0.7s;
+}
+
+.menu {
+    font-size: 30px;
+    color: #5D6D7E;
+    text-align: right;
+    padding: 3px;
+    margin-right: 1%;
+}
+
+
+.menu-bt i{
+    font-size: 27px;
+    
+}
+
+.dark{
+    color: #d8e0e5;
+}
+
+.hideee{
+    display: none;
+}
+
+.menu-bt{
+    box-shadow: 0 0 5px rgb(114, 114, 122);
+    width: 36px;
+    height: 36px;
+    background-color: #ffffff;
+    border-radius: 50px;
+    border-style: none;
+    margin-top: 5px;
+    transition: 0.9s;
+    animation-name: down;
+    animation-duration: 1s;
+    cursor: pointer;
+    color:#273746;
+}
+
+/* hieu ung zoom */
+.zoom:hover button{
+    transform: scale(1.2,1.2);
+    color: rgb(171 171 177);
+}
+
+.zoom:hover img{
+    transform: scale(1.1,1.1);
+}
+
+.zoom1:hover button{
+    transform: scale(1.2,1.2);
+}
+
+
+/* thanh tim kiem */
+.input{
+    font-size: 15px;
+    box-shadow: 0 0 5px rgb(114, 114, 122);
+    position: absolute;
+    padding: 0px 10px ;
+    padding-right: 25px;
+    margin-left: 1.3%;
+    right: 57px;
+    top: 10px;
+    font-family: 'Dosis', sans-serif;
+    width: 30%;
+    height: 35px;
+    border-style: none;
+    border-radius: 100px;
+    transition: all 0.9s ease;
+    animation-name: down;
+    animation-duration: 0.7s;
+    color: #273746;
+    background-color: #ffffff;
+    transition: 0.7s;
+    z-index: 1;
+}
+
+.input-animation{
+    animation-name: left-hide;
+    animation-duration: 1.2s;
+}
+
+.close-animation{
+    animation-name: left-hide;
+    animation-duration: 1.2s;
+}
+
+
+
+
+
+.close{
+    text-shadow: 0 0 5px rgb(114, 114, 122);
+    position: absolute;
+    font-size: 20px;
+    top: 17px;
+    right: 60px;
+    animation-name: down;
+    animation-duration: 0.7s;
+    color: #273746;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.hide{
+    display: none;
+}
+
+.hide1{
+    display: none;
+}
+
+.dark{
+    background-color: #273746;
+}
+
+.dark1{
+    background-color: #5D6D7E;
+}
+
+.dark-search{
+    background-color: #273746;
+    color: #EBEDEF;
+}
+
+.dark-bag{
+    background-color: #273746;
+    color: #EBEDEF;
+}
+
+.dark-user{
+    background-color: #273746;
+    color: #EBEDEF;
+}
+
+.dark-more{
+    background-color: #273746;
+    color: #EBEDEF;
+}
+
+.dark-mode{
+    background-color: #273746;
+    color: #EBEDEF;
+}
+
+.content{
+    padding: 7px;
+}
+
+.video1{
+    display: block;
+    margin-top: 70px;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 7px;
+}
+
+.color-dark{
+    color: #EBEDEF;
+}
+
+.title{
+    font-family: 'Dosis', sans-serif;
+    margin-left: 1.8%;
+    text-align: start;
+    font-size: 37px;
+    font-weight: 900;
+    animation-name: left;
+    animation-duration: 1.5s;
+}
+
+.title-1{
+    font-family: 'Dosis', sans-serif;
+    text-align: start;
+    margin-left: 1.8%;
+    font-size: 15px;
+    font-weight: 500;
+    animation-name: left;
+    animation-duration: 2.3s;
+}
+
+.button-shop{
+    font-family: 'Dosis', sans-serif;
+    background-image: linear-gradient(to right,rgb(74 74 79),rgb(171 171 177));
+    color: #ffffff;
+    width: 100px;
+    height: 30px;
+    margin-top: 7px;
+    margin-left: 1.8%;
+    font-size: 15px;
+    font-weight: 550;
+    border-style: none;
+    border-radius: 100px;
+    transition: 0.7s;
+    animation-name: left;
+    animation-duration: 2.8s;
+}
+
+.title-2{
+    font-family: 'Dosis', sans-serif;
+    margin-top: 20px;
+    margin-left: 1.8%;
+    font-size: 30px;
+    font-weight: 500;
+    animation-name: left;
+    animation-duration: 2.3s;
+}
+
+.trend-icon{
+    color: rgb(74 74 79);
+    animation-name: top;
+    animation-duration: 2.0s;
+}
+
+/* card jordan */
+
+.jordan-card{
+    width: 96%;
+    height: 250px;
+    margin-top: 7px;
+    margin-left: 1.8%;
+    background-image: linear-gradient(to right,rgb(74 74 79),rgb(171 171 177));
+    border-radius: 7px;
+    padding: 10px;
+    animation-name: top;
+    animation-duration: 1.5s;
+    transition: 0.8s;
+    position: relative;
+}
+
+.jordan-card:hover{
+    width: 96%;
+    height: 330px;
+}
+
+.jordan-card i{
+    color: #EBEDEF;
+    font-size: 25px;
+    transition: 0.3s;
+}
+
+.heart-card:hover{
+    transform: scale(1.2,1.2);
+    color: rgb(210,105,30);
+}
+
+.bag-card:hover{
+    transform: scale(1.2,1.2);
+    color: rgb(74 74 79);
+}
+
+.bag-card, .heart-card{
+    position: absolute;
+    left: 15px;
+    top: 15px;
+}
+
+.bag-card{
+    left: unset;
+    right: 15px;
+}
+
+.title-card{
+    text-align: center;
+    transition: 0.8s;
+}
+
+.title-card h2{
+    font-family: 'Dosis', sans-serif;
+    color: #EBEDEF;
+}
+
+.title-card h3{
+    font-family: 'Dosis', sans-serif;
+    color: #EBEDEF;
+}
+
+.img-card{
+    /* width: 50%; */
+    width: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    margin-bottom: 18px;
+    transition: 0.8s;
+}
+
+.size-card{
+    font-family: 'Dosis', sans-serif;
+    color: #EBEDEF;
+}
+
+.size-card h3{
+    margin-left: 7px;
+}
+
+.size-card span {
+    margin: 7px;
+    transition: 1s;
+    cursor: pointer;
+}
+
+
+.color-card{
+    font-family: 'Dosis', sans-serif;
+    color: #EBEDEF;
+    margin-left: 7px;
+}
+
+.color-card button{
+    margin-top: 7px;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #EBEDEF;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.color1{
+    background-color: #000000;
+}
+
+/* .color2{
+    background-color: rgb(210,105,30);
+}
+
+.color3{
+    background-color: #A569BD;
+} */
+
+.color1:hover {
+    border-color: #273746;
+}
+
+/* .color2:hover {
+    border-color: #273746;
+}
+
+.color3:hover {
+    border-color: #273746;
+} */
+.last-card{
+    margin-top: -50px;
+}
+.card-buy{
+    font-family: 'Dosis', sans-serif;
+    background-image: linear-gradient(to right,rgb(74 74 79),rgb(171 171 177));
+    margin: 7px;
+    width: 105px;
+    height: 35px;
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: 700;
+    border-radius: 500px;
+    transition: 1s;
+    border: 2px solid white;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  
+}
+
+.card-buy:hover{
+    transition: 1s;
+    transform: scale(1.2,1.2);
+    color: white;
+    font-weight: 700;
+    border: 2px solid   #ffffff;
+    background: rgb(171 171 177);
+}
+ 
+.jordan-card:hover .img-card{
+    transform: translateY(-25px) rotate(-20deg);
+}
+
+.jordan-card:hover .title-card{
+    transform: translateY(-25px) ;
+}
+
+.size-card{
+    margin-top: 150px;
+    visibility: hidden;
+}
+
+.size-card ,.color-card,.card-buy{
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.9s;
+}
+
+.jordan-card:hover .size-card,
+.jordan-card:hover .color-card,
+.jordan-card:hover .card-buy{
+    visibility: visible;
+    opacity: 100;
+}
+
+.jordan-card:hover .size-card{
+    margin-top: -20px;
+} 
+
+.dark-ct2-title{
+    color: #EBEDEF;
+}
+
+.ct2-title{
+    font-family: 'Dosis', sans-serif;
+    margin-top: 20px;
+    margin-left: 1.8%;
+    font-size: 30px;
+    font-weight: 500;
+    /* font-weight: 530; */
+    animation-name: left;
+    animation-duration: 2.3s;
+    margin-bottom: 7px;
+}
+
+.content2{
+    width: 98%;
+    height: auto;
+    margin-left: 2%;
+    font-family: 'Dosis', sans-serif;
+    position: relative;
+    display: flex;
+}
+
+.ct2-sun{
+    color: rgb(74 74 79);
+    margin-left: 7px;
+}
+
+.ct2-colum img{
+    width: 90%;
+    border-top: 3px solid rgb(74 74 79);
+    border-bottom: 3px solid rgb(74 74 79);
+    transition: 0.5s ;
+}
+
+.ct2-colum:hover img{
+    border-top: 6px solid rgb(171 171 177);
+    border-bottom: 6px solid rgb(171 171 177);
+}
+
+.ct2-tee-bt{
+    font-family: 'Dosis', sans-serif;
+    background-image: linear-gradient(to right,rgb(74 74 79),rgb(171 171 177));
+    color: #ffffff;
+    width: 100px;
+    height: 30px;
+    margin-top: 7px;
+    font-size: 15px;
+    font-weight: 550;
+    border-style: none;
+    border-radius: 100px;
+    margin-bottom: 20px;
+    transition: 0.6s ease;
+}
+
+.ct2-tee-bt:HOVER{
+    transition: 0.6s ease;
+    transform: scale(1.2,1.2);
+}
+
+.ct2-p1, .ct2-p3 ,.ct2-p5,.ct2-p7 {
+    color: rgb(74 74 79);
+    font-size: 25px;
+    font-weight: 550;
+ 
+}
+
+.ct2-colum{
+    flex: 1;
+    margin: 0 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.ct2-content{
+    flex: 1;
+}
+
+.ct2-dark{
+    color: #EBEDEF;
+}
+
+.content-3{
+    width: 98%;
+    height: auto;
+    margin-left: 2%;
+    font-family: 'Dosis', sans-serif;
+    display: flex;
+}
+
+.ct3-title{
+    font-family: 'Dosis', sans-serif;
+    margin-top: 20px;
+    margin-left: 1.8%;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.ct3-colum{
+    flex: 1;
+    margin: 0 5px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.ct3-content{
+    flex: 1;
+}
+
+.ct3-icon{
+    position: absolute;
+    font-size: 23px;
+    color: rgb(74 74 79);
+    font-weight: 550;
+    margin: 7px;
+    transition: 0.3s;
+}
+
+.ct3-icon:hover{
+    transform: scale(1.2,1.2);
+    color: rgb(210,105,30);
+}
+
+.ct3-p1 , .ct3-p3{
+    font-size: 20px;
+    font-weight: 550;
+    color: rgb(74 74 79);
+}
+
+.ct3-p3 , .ct3-p4{
+    text-align: right;
+    margin-right: 10px;
+}
+
+.ct3-bt{
+    font-family: 'Dosis', sans-serif;
+    background-image: linear-gradient(to right,rgb(74 74 79),rgb(171 171 177));
+    color: #ffffff;
+    width: 100px;
+    height: 30px;
+    margin-top: 10%;
+    font-size: 15px;
+    font-weight: 550;
+    border-style: none;
+    border-radius: 100px;
+    margin-bottom: 20px;
+    transition: 0.6s ease;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ct3-bt:HOVER{
+    transition: 0.6s ease;
+    transform: scale(1.2,1.2);
+    border-radius: 4px;
+}
+
+.ct3-img{
+    width: 97%;
+    border-top: 3px solid rgb(74 74 79);
+    border-bottom: 3px solid rgb(74 74 79);
+    transition: 0.5s ;
+}
+
+.ct3-img:HOVER{
+    border-top: 6px solid rgb(210,105,30);
+    border-bottom: 6px solid rgb(210,105,30);
+}
+
+.content-4{
+    margin-left: 1.9%;
+    margin-bottom: 30px;
+    font-family: 'Dosis', sans-serif;
+    position: relative;
+}
+
+.ct4-title{
+    font-family: 'Dosis', sans-serif;
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.ct4-icon-target{
+    margin-left: 5px;
+    color: rgb(74 74 79);
+}
+
+.ct4-img{
+    width: 95%;
+    border-top: 3px solid rgb(74 74 79);
+    border-bottom: 3px solid rgb(74 74 79);
+    transition: 0.5s ;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ct4-img:hover{
+    border-top: 6px solid rgb(210,105,30);
+    border-bottom: 6px solid rgb(210,105,30);
+}
+
+.ct4-card{
+    position: relative;
+}
+
+.ct4-bt{
+    font-family: 'Dosis', sans-serif;
+    background-image: linear-gradient(to right,rgb(74 74 79),rgb(171 171 177));
+    color: #ffffff;
+    width: 100px;
+    height: 30px;
+    margin-left: 2%;
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: 550;
+    border: none;
+    border-radius: 100px;
+    margin-bottom: 20px;
+    transition: 0.6s ease;
+    position: absolute;
+    left: 3%;
+    bottom: 4.3%;
+}
+
+.ct4-bt:hover{
+    transform: scale(1.2,1.2);
+}
+
+.ct4-p1{
+    margin-left: 1.5%;
+    position: absolute;
+    font-size: 25px;
+    color: #ffffff;
+    left: 3%;
+    bottom: 2%;
+}
+
+.ct4-p2{
+    margin-top: 7PX;
+    margin-left: 1.5%;
+    font-size: 30px;
+    font-weight: 550;
+}
+
+.content-5{
+    font-family: 'Dosis', sans-serif;
+    margin-bottom: 30px;
+    margin-left: 2%;
+}
+
+.ct5-title{
+    font-family: 'Dosis', sans-serif;
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.ct5-icon-title{
+    font-size: 35px;
+    margin-left: 5px;
+    color: rgb(74 74 79);
+    margin-bottom: 5px;
+}
+
+.ct5-p1{
+    font-size: 23px;
+    color: #ffffff;
+    font-weight: 500;
+    margin-top: px;
+    margin-bottom: 15px;
+}
+
+.ct5-card{
+    padding: 7px;
+    width: 98%;
+    border-radius: 7px;
+    text-align: center;
+    margin-bottom: 30px;
+    background-image: linear-gradient(to right,rgb(74 74 79),rgb(171 171 177));
+}
+
+.ct5-bt{
+    font-family: 'Dosis', sans-serif;
+    font-size: 17px;
+    color: #ffffff;
+    background-color: rgb(171 171 177);
+    font-weight: 550;
+    width: 80px;
+    height: 30px;
+    margin: 7px;
+    border: 2.5px  white;
+    border-style: solid;
+    border-radius: 50px;
+    transition: 0.7s;
+}
+
+.ct5-border{
+    border-left: 2.5px dashed #ffffff;
+    border-right: 2.5px dashed #ffffff;
+    width: 100%;
+    height: auto;
+}
+
+.ct5-bt:hover{
+    transform: scale(1.2,1.2);
+    background: rgb(171 171 177);
+    color: #ffffff;
+    border: 2px solid #ffffff;
+}
+
+
+.content-6{
+    font-family: 'Dosis', sans-serif;
+    padding-bottom: 10px;
+    text-align: center;
+    width: 96%;
+    margin-left: 2%;
+}
+
+.ct6-title{
+    font-family: 'Dosis', sans-serif;
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: 500;
+    margin-left: 2%;
+}
+
+.ct6-icon-title{
+    font-size: 35px;
+    margin-left: 5px;
+    color: rgb(74 74 79);
+}
+
+.ct6-p1{
+    font-size: 23px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.ct6-heart{
+    font-size: 25px;
+    color: rgb(74 74 79);
+}
+
+.ct6-p2{
+    font-weight: 550;
+    margin-bottom: 5px;
+}
+
+.ct6-card{
+    background-image: linear-gradient(to right,rgb(74 74 79),rgb(171 171 177));
+    margin-bottom: 10px;
+    width: auto;
+    height: 135px;
+    padding: 7px;
+    border-radius: 5px;
+}
+
+.ct6-card ul i{
+    font-size: 23px;
+    color: white;
+    transition: 0.7s;
+    margin: 5px;
+}
+
+.ct6-ul{
+    margin-top: 7px;
+}
+
+.ct6-card:hover ul i{
+    transform: scale(1.2,1.2);
+}
+
+.ct6-hide{
+    display: none;
+}
+
+
+
+.ct6-boder{
+    border: 3px #ffffff;
+    border-style: dashed;
+    height: 100%;
+    border-radius: 5px;
+    position: relative;
+}
+
+.fb{
+    font-size: 20px;
+    color: #ffffff;
+    transition: 0.7s;
+    margin-top: 15px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ct6-imoji-1{
+    position: absolute;
+    font-size: 40px;
+    color: #ffffff;
+    margin-left: 2%;
+}
+
+.ct6-imoji-2{
+    position: absolute;
+    font-size: 40px;
+    color: #ffffff;
+    right: 2%;
+}
+
+.ct7-title{
+    font-family: 'Dosis', sans-serif;
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 7px;
+    margin-left: 2%;
+}
+
+.ct7-icon-title{
+    font-size: 35px;
+    margin-left: 10px;
+    color: rgb(74 74 79);
+    
+}
+
+.content-7{
+    font-family: 'Dosis', sans-serif;
+    padding-bottom: 30px;
+    margin-left: 2%;
+}
+
+.ct7-card{
+    margin-top: 7px;
+    padding: 7px;
+    text-align: center;
+    width: 98%;
+    /* background-image: linear-gradient(to right,rgb(74 74 79),rgb(171 171 177)); */
+    background-image: linear-gradient(to right,rgb(74 74 79),rgb(171 171 177));
+    border-radius: 7px;
+    color: #ffffff;
+    overflow: hidden;
+    transition: 0.6s;
+}
+
+.ct7-p1{
+    font-size: 27px;
+    font-weight: 650;
+}
+
+.ct7-p2{
+    color: rgb(171 171 177);
+}
+
+.ct7-imgg{
+    width: 120px;
+    height: 120px;
+    border: 4px solid #ffffff;
+    border-radius: 50%;
+    overflow: hidden;
+    margin:  auto;
+    margin-top: 20px;
+    transition: 0.9s;
+}
+
+.ct7-img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    transition: 0.9s;
+}
+
+/* .ct7-imgg:hover{
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+    border-radius: unset;
+    border-radius: 7px;
+} */
+
+
+
+
+.ct7-menu a i{
+    font-size: 37px;
+    color: #ffffff;
+    margin: 20px;
+    transition: 0.5s ease;
+}
+
+.ct7-fb:hover ,.ct7-ig:hover ,.ct7-mail:hover ,.ct7-git:hover   {
+    transform: scale(1.2,1.2);
+    color: rgb(171 171 177);
+}
+
+.ct7-mail:hover ,.ct7-git:hover{
+    transform: scale(1.2,1.2);
+    color: rgb(74 74 79);
+}
+
+.ct7-bt:hover {
+    transform: scale(1.2,1.2);
+    color: #ffffff;
+}
+
+.ct7-bt{
+    width: 130px;
+    height: 35px;
+    background-image: linear-gradient(to right,rgb(74 74 79),rgb(171 171 177));
+    color: #ffffff;
+    font-family: 'Dosis', sans-serif;
+    margin-bottom: 15px;
+    font-size: 20px;
+    border: 3px solid #ffffff;
+    transition: 0.6s ease;
+    border-radius: 50px;
+}
+
+.ct7-boder{
+    border: 3px #ffffff;
+    border-top: dashed;
+    border-bottom: dashed;
+}
+
+.st-icon-title{
+    font-size: 50px;
+    vertical-align: middle;
+}
+
+/* setting  */
+.setting{
+    position: fixed;
+    background: rgba(54, 53, 53, 0.6);
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+
+.st-title{
+    font-family: 'Dosis', sans-serif;
+    font-size: 40px;
+    margin-top: 17px;
+    padding-left: 15px;
+    color: rgb(74 74 79);
+    font-weight: 590;
+}
+
+.st-menu{
+    background-color: #EBEDEF;
+    color: #273746;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 60%;
+    height: 100%;
+    box-shadow: 0 0 25px rgb(41, 41, 44);
+    animation-name: right;
+    animation-duration:  0.7s;
+    transition: 0.5s;
+}
+
+.st-menu-dark{
+    background-color: #273746;
+    color: #EBEDEF;
+}
+
+.st-ul{
+    position: absolute;
+    top: 90px;
+    font-family: 'Dosis', sans-serif;
+    font-size: 20px;
+    list-style: none;
+    
+    width: 100%;
+}
+
+
+
+.st-ul li{
+    color: rgb(74 74 79);
+    margin: 14px;
+    transition: 0.4s;
+}
+
+.l1:hover ,.l2:hover ,.l3:hover  ,.l4:hover ,.l5:hover {
+    color: rgb(74 74 79);
+    font-weight: 600;
+    font-size: 24px
+}
+
+.st-close{
+    position: absolute;
+    font-size: 40px;
+    color: #ffffff;
+    text-shadow: 0 0 25px rgb(171, 171, 177);
+    left: 10px;
+    top: 10px;
+    transition: 0.4s;
+}
+
+.st-close:hover{
+    font-weight: 550;
+    transform: scale(1.2,1.2);
+}
+
+.st-content{
+    margin-top: 225px;
+    padding: 15px;
+    font-family: 'Dosis', sans-serif;
+    position: relative;
+}
+
+.st-login-bt{
+    font-family: 'Dosis', sans-serif;
+    font-size: 17px;
+    width: 100%;
+    height: 35px;
+    background-color: rgb(74 74 79);
+    color: #ffffff;
+    border: none;
+    border-radius: 50px;
+    transition: 0.6s;
+    margin-bottom: 3%;
+ 
+}
+
+.st-sign-up-bt{
+    font-family: 'Dosis', sans-serif;
+    font-size: 17px;
+    width: 100%;
+    height: 35px;
+    color: rgb(74 74 79);
+    border: 2px solid rgb(74 74 79);
+    border-radius: 50px;
+    transition: 0.6s;
+}
+
+.st-login-bt:hover ,.st-sign-up-bt:hover{
+    transform: scale(1.1,1.1);
+}
+
+.st-p1{
+    margin-top: 7px;
+    font-size: 16.5px;
+    font-weight: 500;
+}
+
+.st-a{
+    color: rgb(74 74 79);
+    font-weight: 600;
+}
+
+.st-ul2 li{
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+.st-ul2 a{
+    text-decoration: none;
+    color: #273746;
+    /* margin-right: 30px; */
+}
+.st-ul2{
+    margin-top: 20px;
+    list-style: none;
+    font-size: 25px;
+}
+
+.st-icon{
+    margin-right: 10px;
+    font-size: 25px;
+    vertical-align: middle;
+    font-weight: 500;
+}
+
+.st-icon:hover{
+    color: rgb(74 74 79);
+}
+
+.st-hide{
+    display: none;
+}
+
+/* tinh nang login */
+.login{
+    font-family: 'Dosis', sans-serif;
+    position: fixed;
+    background: rgba(54, 53, 53, 0.6);
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    text-align: center;
+    
+}
+
+.lg-ul{
+    list-style: none;
+}
+
+.lg-title{
+    font-size: 45px;
+    color: rgb(74 74 79);
+
+}
+
+.lg-last{
+    margin-top: 20px;
+}
+
+.lg-content{
+    background-color: #ffffff;
+    box-shadow: 0 0 25px rgb(41, 41, 44);
+    margin-top: 100px;
+    padding: 20px;
+    width: 85%;
+    height: 420px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    animation-name: top;
+    animation-duration:  0.7s;
+}
+
+.lg-forget{
+    color: #5D6D7E;
+    font-size: 15px;
+}
+
+.lg-p1{
+    color: #5D6D7E;
+    font-size: 15px;
+}
+
+.lg-a{
+    color: #5D6D7E;
+    font-size: 15px;
+}
+
+.lg-forget:hover ,.lg-a:hover{
+    color: rgb(74 74 79);
+    font-weight: 600;
+}
+
+.lg-mail{
+    margin-bottom: 30px;
+}
+
+.lg-mail, .lg-pass {
+    font-family: 'Dosis', sans-serif;
+    width: 90%;
+    height: 40px;
+ 
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #d5b7cd;
+    font-size: 17px;
+}
+
+.lg-bt{
+    font-family: 'Dosis', sans-serif;
+    width: 90%;
+    height: 40px;
+    margin: 13px;
+    font-size: 23px;
+    color: rgb(74 74 79);
+    background-color: #ffffff;
+    border: 2.5px solid rgb(74 74 79);
+    border-radius: 50px;
+    font-weight: 500;
+}
+
+.lg-bt:hover{
+    background-color: rgb(74 74 79);
+    color: #ffffff;
+    border: none;
+}
+
+.lg-close{
+    position: absolute;
+    font-size: 40px;
+    color: #ffffff;
+    text-shadow: 0 0 25px rgb(171, 171, 177);
+    left: 10px;
+    top: 10px;
+    transition: 0.4s;
+}
+
+.lg-close:hover{
+    font-weight: 550;
+    transform: scale(1.2,1.2);
+}
+
+.lg-hide{
+    display: none;
+}
+
+.lg-li{
+    position: relative;
+}
+
+.lg-li span{
+    position: absolute;
+    color: #273746;
+    border-bottom: 3px solid rgb(74 74 79);
+    width: 0%;
+    top: 38px;
+    left: 5%;
+    transition: 0.7s;
+}
+
+.lg-mail:focus ~ span{
+    width: 90%;
+}
+
+.lg-pass:focus ~ span{
+    width: 90%;
+}
+
+
+
+.lg-error{
+    color: rgb(210,105,30);
+    font-weight: 600;
+    position: absolute;
+    top: 40px;
+    left: 5%;
+    font-size: 15px;
+}
+
+.lg-show-error{
+    color: rgb(210,105,30);
+    font-weight: 600;
+}
+
+.lg-fb, .lg-ap{
+    margin-top: 20px;
+    font-size: 25px;
+    color: rgb(74 74 79);
+    transition: 0.4s;
+    
+}
+
+.lg-ap{
+    font-size: 28px;
+}
+
+.lg-fb:hover , .lg-ap:hover{
+    transform: scale(1.2,1.2);
+}
+
+/* Register card */
+.register{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    background: rgba(54, 53, 53, 0.6);
+    z-index: 1;
+    text-align: center;
+}
+
+.rs-close{
+    position: absolute;
+    font-size: 40px;
+    color: #ffffff;
+    text-shadow: 0 0 25px rgb(171, 171, 177);
+    left: 10px;
+    top: 10px;
+    transition: 0.4s;
+}
+
+.rs-close:hover{
+    font-weight: 550;
+    transform: scale(1.2,1.2);
+}
+
+.rs-card{
+    text-align: center;
+    box-shadow: 0 0 25px rgb(41, 41, 44);
+    background-color: #ffffff;
+    width: 80%;
+    border-radius: 5px;
+    font-family: 'Dosis', sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
+    padding: 20px;
+    height: 500px;
+    animation-name: top;
+    animation-duration: 0.7s;
+}
+
+.rs-user , .rs-mail , .rs-pass1 , .rs-pass2 {
+    font-family: 'Dosis', sans-serif;
+    width: 90%;
+    height: 40px;
+    margin-bottom: 10px;
+    margin-top: 15px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #d5b7cd;
+    font-size: 17px;
+}
+
+.rs-bt{
+    font-family: 'Dosis', sans-serif;
+    width: 90%;
+    height: 40px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 23px;
+    background-color: rgb(74 74 79);
+    color: #ffffff;
+    background-color: rgb(74 74 79);
+    border: 2.5px solid rgb(74 74 79);
+    border-radius: 50px;
+    font-weight: 500;
+}
+
+.rs-bt:hover {
+    color: rgb(74 74 79);
+    background-color: #ffffff;
+    border: 2.5px solid rgb(74 74 79);
+}
+
+.rs-form{
+    position: relative;
+}
+
+.rs-error{
+    position: absolute;
+    top: 55px;
+    left: 5%;
+    color: rgb(210,105,30);
+    font-weight: 600;
+}
+
+.rs-last{
+    text-decoration: none;
+    margin-top: 15px;
+}
+
+.rs-p1{
+    font-family: 'Dosis', sans-serif;
+    font-size: 15px;
+}
+
+.rs-p1>a{
+    text-decoration: none;
+    color: #273746;
+}
+
+.rs-p1:hover{
+    font-weight: 600;
+}
+
+.rs-form span{
+    color: black;
+    border-bottom: 3px solid rgb(74 74 79);
+    width: 0px;
+    transition: 0.5s;
+    position: absolute;
+    top: 52px;
+    left: 5%;
+    transition: 0.5s;
+}
+
+.rs-user:focus ~ span,.rs-mail:focus ~ span, .rs-pass1:focus ~ span,.rs-pass2:focus ~ span{
+    width: 90%;
+}
+
+.rs-hide{
+    display: none;
+}
+
+/* Bag */
+.bag-content{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background: rgba(54, 53, 53, 0.6);
+    z-index: 1;
+}
+
+.bag-card-ct{
+    background-color: #ffffff;
+    width: 70%;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    font-family: 'Dosis', sans-serif;
+    text-align: center;
+    border-radius: 5px;
+    position: relative;
+    box-shadow: 0 0 25px rgb(41, 41, 44);
+    animation-name: top;
+    animation-duration: 0.7s;
+}
+
+.bag-close{
+    position: absolute;
+    top: 5px;
+    font-size: 30px;
+    right: 5px;
+    transition: 0.5s;
+    text-shadow: 0 0 25px rgb(41, 41, 44);
+}
+
+.bag-close:hover{
+    transform: scale(1.2,1.2);
+}
+
+.bag-ct{
+    background-color: rgb(74 74 79);
+    width: 90%;
+    height: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    padding: 7px;
+}
+
+.bag-p2{
+    color: #ffffff;
+}
+
+.bag-bt1{
+    font-family: 'Dosis', sans-serif;
+    border-radius: 50px;
+    width: 90%;
+    margin-top: 10px;
+    height: 35px;
+    color: rgb(74 74 79);
+    border: 3px solid rgb(74 74 79);
+    background-color: #ffffff;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.bag-bt1:hover{
+    background-color: rgb(74 74 79);
+    color: #ffffff;
+    
+}
+
+.bag-hide{
+    display: none;
+}
+
+.bag-bt{
+    display: none;
+}
+
+.user-bt{
+    display: none;
+}
+
+.dark-bt{
+    display: none;
+}
+
+
+
+
+@keyframes down{
+    0%{
+        opacity: 0;
+        transform: translate(0,-100px);
+    }
+
+
+    100%{
+        opacity: 1;
+        transform: translate(0,0);
+    }
+}
+
+@keyframes top{
+        0%{
+            opacity: 0;
+            transform: translate(0,+100px);
+        }
+    
+    
+        100%{
+            opacity: 1;
+            transform: translate(0,0);
+        }
+}
+
+@keyframes right{
+    0%{
+        opacity: 0;
+        transform: translate(+100px,0);
+    }
+
+
+    100%{
+        opacity: 1;
+        transform: translate(0,0);
+    }
+}
+
+@keyframes left{
+    0%{
+        opacity: 0;
+        transform: translate(-100px,0);
+    }
+
+
+    100%{
+        opacity: 1;
+        transform: translate(0,0);
+    }
+}

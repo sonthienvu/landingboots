@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&family=Josefin+Sans&display=swap" rel="stylesheet">
+    <!-- animation library -->
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <link rel="icon" type="image/x-icon" href="./img/logo1.png">
+    <!-- logo trang -->
+    <link rel="stylesheet" href="./css/boots.css">
+    <link rel="stylesheet" href="./respon/Responsive.css">
+    <title>Luciano Shoemaker</title>
+</head>
+<body>
+
+    <!-- -----------PHAN HEADER TRANG WEB----------- -->
+    <div class="all ">
+        <div class="header">
+            <a class="zoom1"><input class="input hide" type="text" placeholder="search"><i class='bx bx-x close hide' title="Close"></i></a>
+            <img class="logo" src="./img/logo.png">
+            <ul class="menu">
+                <a class="zoom"> <button  class="menu-bt bt1 search-bt" title="Search" > <i class='bx bx-search'></i> </button></a>     
+                <a class="zoom"><button class="menu-bt bag-bt" title="Your bag"><i class='bx bx-shopping-bag'></i></button></a>
+                <a class="zoom"><button class="menu-bt user-bt" title="Login"><i class='bx bx-user'></i></i></button></a>
+                <!-- <a class="zoom"><button class="menu-bt dark-bt " title="Dark mode"><i class='bx bx-moon'></i></button></a>
+                <a class="zoom"><button class="menu-bt light-bt " onclick="dark_mode()" ><i class='bx bx-sun i-sun'></i></button></a> -->
+                <a class="zoom"><button class="menu-bt more-bt " title="More"><i class='bx bx-list-ul'></i></button></a>
+
+            </ul>
+        </div>
+
+
+
+        <!-- Login -->
+        <div class="login lg-hide">
+            <i class='bx bx-x  lg-close'></i>
+            <form class="lg-form" action="">
+                <div class="lg-content">
+                    <p class="lg-title">LOGIN</p>
+                    <ul class="lg-ul">
+                        <li class="lg-li"> 
+                            <input class="lg-mail" type="text"  placeholder="Gmail">
+                            <small class="lg-error"></small>
+                            <span></span>
+                        </li>
+    
+                        <li class="lg-li"> 
+                            <input class="lg-pass" type="password"  placeholder="Password">
+                             <small class="lg-error"></small>
+                             <span></span>
+                        </li>
+    
+                    </ul>
+                    <div class="lg-last">
+                        <p class="">
+                           <a target="_blank" href="https://www.facebook.com/"><i class='bx bxl-facebook-circle lg-fb'></i></a>
+                           <a target="_blank" href="https://support.apple.com/"> <i class='bx bxl-apple lg-ap'></i></a>
+                        </p>
+                        <p ><a class="lg-forget" href="#">Quên mật khẩu</a></p>
+                        <a href="index.html"><button class="lg-bt">Login</button></a>
+                        <p class="lg-p1">Nếu chưa có tài khoản<br> <a href="#" class="lg-a">hãy đăng ký !</a> </p>
+    
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <!-- Phan card (dang ky) register -->
+        <div class="register rs-hide">
+            <i class='bx bx-x  rs-close'></i>
+           <form class="rs-form" action="">
+                <div class="rs-card">
+                    <p class="lg-title">REGISTER</p>
+
+                    <div class="rs-form">
+                        <input class="rs-user" type="text" placeholder="Username">
+                        <small class="rs-error"></small>
+                        <span></span>
+                    </div>
+
+                    <div class="rs-form">
+                        <input class="rs-mail" type="text" placeholder="Gmail">
+                        <small class="rs-error"></small>
+                        <span></span>
+                    </div>
+
+                    <div class="rs-form">
+                        <input class="rs-pass1" type="password" placeholder="Password">
+                        <small class="rs-error"></small>
+                        <span></span>
+                    </div>
+
+                    <div class="rs-form">
+                        <input class="rs-pass2" type="password" placeholder="Confirm password">
+                        <small class="rs-error"></small>
+                        <span></span>
+                    </div>
+
+                    <div class="rs-last">
+                        <p class="">
+                            <a target="_blank" href="https://www.facebook.com/"><i class='bx bxl-facebook-circle lg-fb'></i></a>
+                            <a target="_blank" href="https://support.apple.com/"> <i class='bx bxl-apple lg-ap'></i></a>
+                         </p>
+                         <button class="rs-bt">REGISTER</button>
+                         <p class="rs-p1"><a target="_blank" href="./link_help/help.html">Help</a> </p>
+                    </div>
+
+
+                </div> 
+           </form>
+        </div>
+
+
+
+        <!-- Setting -->
+        <div class="setting st-hide">
+            <i class='bx bx-x st-close'></i>
+               <div class="st-menu">
+                    <p class="st-title">MORE  <i class='bx bx-list-minus st-icon-title' ></i></p>
+                    <ul class="st-ul">
+                        <li class="st-li l1">Giày  </li>
+                        <li class="st-li l2"> Áo </li>
+                        <li class="st-li l3"> Quần </li>
+                        <li class="st-li l4">Áo khoác  </li>
+                        <li class="st-li l5"> Phụ kiện </li>        
+                    </ul>
+                    <div class="st-content">
+                        <button class="st-login-bt">Đăng nhập</button>
+                        <button class="st-sign-up-bt">Đăng Kí</button>
+                        <p class="st-p1">Nếu chưa có tài khoản<br> <a href="#" class="st-a">hãy đăng ký !</a> </p>
+                        <ul class="st-ul2">
+                            <li class="list-moon"><i class='bx bx-moon st-icon'></i>Dark mode</li>
+                            <li class="list-sun hide"><i class='bx bx-sun st-icon '></i>Light mode</li>
+                            <li><i class='bx bx-shopping-bag st-icon st-icon-bag'></i>Bag</li>
+                            <li> <i class='bx bx-package st-icon'></i>Oder</li>
+                            <li> 
+                                
+                                <i class='bx bx-question-mark st-icon'></i>
+                                <a target="_blank" href="./link_help/help.html">Help</a>
+                            </li>
+                        </ul>
+                    </div>
+               </div>
+        </div>
+
+         <!-- Bag -->
+         <div class="bag-content bag-hide">
+            <div class="bag-card-ct">
+               <i class='bx bx-x  bag-close'></i>
+               <p class="lg-title">BAG</p>
+               <p class="bag-p1">Giỏ hàng của bạn</p>
+               <div class="bag-ct">
+                <p class="bag-p2">Chưa có sản phẩm, mua sắm ngay !</p>
+               </div>
+               <button class="bag-bt1">SHOP NOW</button>
+            </div>
+       </div>
+
+
+        <!-- -----------PHAN CONTENT TRANG WEB----------- -->
+        <div class="content">
+
+            <video class="video1" width="97%" autoplay loop muted>
+                <source src="./img/intro.mp4">
+            </video>
+
+            <P class="title">Welcome to Luciano Shoemaker<P>
+            <p class="title-1">Chào mừng đến với Luciano Shoemaker. Chúng tôi tự hào định hình nên phong cách cho người đàn ông Việt Nam, bắt đầu từ đôi giày bạn mang.
+            </p>
+            <a class="zoom1">
+                <button class="button-shop">SHOP NOW</button>
+            </a>
+
+            <p class="title-2">TRENDING<i class='bx bx-bar-chart-alt-2 title-2 trend-icon'></i> </p>
+
+            <div class="jordan-card">
+                <div>
+                    <i class='bx bx-heart heart-card'></i>
+                    <i class='bx bx-shopping-bag bag-card' ></i>
+                </div>
+                <img class="img-card" src="./img/trending.png" title="BLACK LEATHER HARNESS BOOTS">
+                <div class="title-card">
+                    <h2>BLACK LEATHER HARNESS BOOTS</h2>
+                    <H3>2.500.000 Đ </H3>
+                </div>
+
+                <div class="size-card">
+                    <h3>size(EU) :</h3>
+                    <span class="span">39</span>
+                    <span class="span">40</span>
+                    <span class="span">41</span>
+                    <span class="span">42</span>
+                </div>
+
+                <div class="color-card">
+                    <h3>color :</h3>
+                    <span ><button class="color1"></button></span>
+                    <!-- <span><button class="color2"></button></span>
+                    <span><button class="color3"></button></span> -->   
+                    
+                </div>
+
+               <div class="last-card">
+                <button class="card-buy">BUY NOW</button>
+               </div>
+               
+            </div>
+
+           
+        </div>
+
+        <!-- //phần nội dung 2 (summer shop) -->
+        <p class="ct2-title">SUMMER SHOP<i class='bx bxs-sun ct2-sun'></i></p>
+
+      
+            <div class="content2">
+                <div class="ct2-colum">
+                    <img src="./img/Zipboots.jpg" title="Zip Boots">
+                    <div class="ct2-content">
+                            <p class="ct2-p1">BLACK ZIP BOOTS SS2021</p>
+                            <P class="ct2-p2">Thông tin sản phẩm:</P>
+                            <P class="ct2-p2">Upper: Italy leather</P>
+                            <P class="ct2-p2">Lining: italy leather</P>
+                            <P class="ct2-p2">Construction: Blake</P>
+                    </div>
+                    <button class="ct2-tee-bt">2.500.000 Đ</button>
+                </div>
+    
+                <div class="ct2-colum">
+                    <img src="./img/CHELSEA BOOTS.jpg" title="CHELSEA BOOTS">
+                    <div class="ct2-content">
+                        <p class="ct2-p3">CHELSEA BOOTS</p>
+                        <P class="ct2-p4">Thông tin sản phẩm:</P>
+                        <P class="ct2-p4">Upper : Da mastrotto italy</P>
+                        <P class="ct2-p4">Sock Lining : Da Bò ý</P>
+                        <P class="ct2-p4">Outsole : Đế Da italy</P>
+                    </div>
+                    <button class="ct2-tee-bt">2.500.000 Đ</button>
+                </div>  
+            </div>
+       
+
+            
+
+        <!-- hang thu 2 -->
+
+    
+            <div class="content2">
+                <div class="ct2-colum">
+                    <img src="./img/lukas bootsboots.jpg" title="LUKAS BOOTS">
+                    <div class="ct2-content">
+                        <p class="ct2-p5">LUKAS BOOTS SS2021</p>
+                        <P class="ct2-p6">Thông tin sản phẩm:</P>
+                        <P class="ct2-p6">Upper : Da veg italy</P>
+                        <P class="ct2-p6">Sock Lining : Da Bò ý</P>
+                        <P class="ct2-p6">Outsole : Đế cao su</P>
+                    </div>
+                    <button class="ct2-tee-bt">2.150.000 Đ</button>
+                </div>
+    
+                <div class="ct2-colum">
+                    <img src="./img/SANTIAG.jpg" title="SANTIAG">
+                    <div class="ct2-content">
+                        <p class="ct2-p7">SANTIAG SS2021</p>
+                        <P class="ct2-p8">Thông tin sản phẩm:</P>
+                        <P class="ct2-p8">Upper : Da mastrotto italy</P>
+                        <P class="ct2-p8">Sock Lining : Da Bò ý </P>
+                        <P class="ct2-p8">Outsole : Đế Da italy</P>
+                    </div>
+                    <button class="ct2-tee-bt">3.500.000 Đ</button>
+                </div>
+            </div>
+       
+
+        <p class="ct2-title ct3-title">SPECIAL ITEMS<i class='bx bxs-doughnut-chart ct2-sun'></i></p>
+        <!-- <--content 3--> 
+            <div class="content-3">
+                <div class="ct3-colum">
+                    <img class="ct3-img" src="./img/SANTIAG TOBACCO.jpg">
+                    <div class="ct3-icon">
+                        <i class='bx bx-heart'></i>
+                    </div>
+                </div>
+    
+                <div class="ct3-colum">
+                    <p class="ct3-p1">SANTIAG TOBACCO</p>
+                    <p class="ct3-p2">Một sản phẩm cực kì mới trong bộ sưu tập 2019 nhưng cũng cực kỳ gẫn gũi đối với những bạn đã tìm hiểu qua
+                    các dòng cowboy boots đó chính là mẫu Fringed zip boots. Nếu bạn quá chán với những mẫu zip boots thông thường thì đây có thể là một lựa chọn thay thế cực kì hoàn hảo.</p>
+                    <button class="ct3-bt">WATCH NOW</button>
+                </div>
+            </div>
+       
+
+        
+
+        <!-- colum 2 -->
+            <div class="content-3">
+                <div class="ct3-colum">
+                    <p class="ct3-p3">NEW PRODUCT</p>
+                    <p class="ct3-p4">Trên thị trường, phân khúc giày boot nam trắng không hề thua kém các dòng giày boot nam khác. Sắc trắng là màu sắc cơ bản, có thể kết hợp với nhiều phong 
+                    cách thời trang khác nhau. Chính vì lẽ đó mà giày boot trắng rất được các anh yêu thích. Em giày này mang đến vẻ đẹp tự do, phóng khoáng cho các anh.</p>
+                    <button class="ct3-bt">WATCH NOW</button>
+                </div>
+    
+                <div class="ct3-colum">
+                    <img class="ct3-img" src="./img/bootstrăngtrăng.jpg">
+                    <div class="ct3-icon">
+                        <i class='bx bx-heart'></i>
+                    </div>
+                </div>
+            </div>
+    
+        
+       
+           
+        <!-- content 4 -->
+     
+            <div class="content-4">
+                <p class="ct4-title">TARGET <i class='bx bxs-bolt-circle ct4-icon-target'></i></p>
+               <div class="ct4-card">
+                    <img class="ct4-img" src="./img/VHLHL.jpg">
+                    <button class="ct4-bt">WATCH</button>
+                    <p class="ct4-p1">@hlam_203 x 7153</p>
+               </div>
+                <p class="ct4-p2">ĐỊNH HƯỚNG PHONG CÁCH THỜI TRANG CỦA BẠN!</p>
+            </div>
+       
+
+        
+
+        <!-- content-5 -->
+       
+            <div class="content-5">
+                <p class="ct5-title">MORE <i class='bx bx-list-minus ct5-icon-title' ></i></p>
+                <div class="ct5-card">
+                    <div class="ct5-border">
+                        <p class="ct5-p1">Thêm về các sản phẩm của chúng tôi </p>
+                        <uL>
+                        <a><button class="ct5-bt">Giày</button></a>
+                        <a><button class="ct5-bt">Áo</button></a>
+                        <a><button class="ct5-bt">Quần</button></a>
+                        <a><button class="ct5-bt">Áo khoác</button></a>
+                        <a><button class="ct5-bt">Phụ kiện</button></a>
+                        <a><button class="ct5-bt">Balo</button></a>
+                        </uL>
+                    </div>
+               </div>
+            </div>
+        
+
+        
+
+        <!-- content 6 -->
+      
+            <p class="ct6-title">RATING <i class='bx bxs-star-half ct6-icon-title'></i></p>
+            <div class="content-6">
+                <p class="ct6-p1">Đánh giá về trang web của mình <i class='bx bxs-heart ct6-heart' ></i></p>
+                    <div class="ct6-card">
+                        <div class="ct6-boder">
+                            <P class="ct6-imoji-1"><i class='bx bx-ghost'></i></P>
+                            <P class="ct6-imoji-2"><i class='bx bxs-ghost' ></i></P>
+                            <ul class="ct6-ul">
+                                <i class='bx bx-star ct6-star-1' ></i>
+                                <i class='bx bxs-star ct6-star-2 ct6-hide' ></i>
+                                <i class='bx bx-star ct6-star-3' ></i>
+                                <i class='bx bxs-star ct6-star-4 ct6-hide' ></i>
+                                <i class='bx bx-star ct6-star-5' ></i>
+                                <i class='bx bxs-star ct6-star-6 ct6-hide' ></i>
+                                <i class='bx bx-star ct6-star-7' ></i>
+                                <i class='bx bxs-star ct6-star-8 ct6-hide' ></i>
+                                <i class='bx bx-star ct6-star-9' ></i>
+                                <i class='bx bxs-star ct6-star-10 ct6-hide' ></i>
+                                <i class='bx bx-x ct6-hide ct6-close'></i>
+                            </ul>
+                        <div class="ct6-fb">
+                            <p class="fb">Ấn icon sao để rating</p>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+    
+
+         
+        
+        <!-- conten-7 -->
+     
+            <p class="ct7-title">ABOUT ME<i class='bx bxs-user-account ct7-icon-title'></i></p>
+
+            <div class="content-7">
+                <div class="ct7-card">
+                <div class="ct7-boder">
+                    <div class="ct7-imgg">
+                        <img class="ct7-img" src="./img/avtfb.jpg">
+                    </div>
+                    <p class="ct7-p1">Vu Hoang Lam</p>
+                    <p class="ct7-p2">WEB DESIGNER</p>
+                    <div class="ct7-menu">
+                        <a href="https://www.facebook.com/vhl7153"><i class='bx bxl-facebook ct7-fb' ></i></a>
+                            <a href="https://www.instagram.com/hlam_203/"><i class='bx bxl-instagram ct7-ig' ></i></a>
+                            <a href="mailto:lamchanhhung@gmail.com"><i class='bx bxl-gmail ct7-mail' ></i></a>
+                                <a href=""><i class='bx bxl-github ct7-git' ></i></a>
+                    </div>
+                <a href="https://www.facebook.com/vhl7153"> <button class="ct7-bt">CONTACT ME</button></a>
+                </div>
+                </div>
+            </div>
+    
+
+
+    </div>
+    <script src="./react/boots.js"></script>
+    <script>
+        AOS.init();
+      </script>
+</body>
+</html>
